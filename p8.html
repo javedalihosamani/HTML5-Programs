@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML-5</title>
+        <style>
+            dialog{
+                background-color: teal;
+                color: white;
+                margin: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <center>
+            <h3>This is DIALOG TAG</h3>
+            <p><b>( This tag to create a new popup dialog on a web page. )</b></p>
+        </center>
+        <hr>
+
+        <dialog id="dialogID">
+            <button type="button" id="closeButton">&times;</button>
+            <h1>FULLSTACK..!</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor nam quam laboriosam blanditiis eveniet modi nulla molestiae sunt molestias sequi provident itaque, consequatur, quo aliquid minima. Voluptates laborum dolorem illum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos, numquam ad fugiat quas modi quis voluptatibus a alias quidem, quo nam magni maiores quia harum. Non voluptates repellendus dicta autem.</p>
+        </dialog>
+
+        <button type="button" id="openDialog">Open Dailog Tag</button>
+
+        <script>
+            document.getElementById("openDialog").onclick = function(){
+                document.getElementById("dialogID").show();
+            };
+
+            document.getElementById("closeButton").onclick = function(){
+                document.getElementById("dialogID").close();
+            };
+        </script>
+    </body>
+</html>
